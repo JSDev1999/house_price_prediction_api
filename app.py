@@ -7,7 +7,7 @@ CORS(app)
 
 @app.route('/', methods=['GET'])
 def Home():
-    return " Hello from api!!"
+    return " Hello from api!! ,Have fun"
 
 @app.route('/get_location_names', methods=['GET'])
 def get_location_names():
