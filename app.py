@@ -5,6 +5,8 @@ import util
 app = Flask(__name__)
 CORS(app)
 
+import numpy
+print(numpy.version.version)
 @app.route('/', methods=['GET'])
 def Home():
     return " Hello from api!! ,Have fun"
