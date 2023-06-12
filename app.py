@@ -13,7 +13,6 @@ def Home():
 @app.route('/get_location_names', methods=['GET'])
 def get_location_names_fun():
     locations = get_location_names()
-    print(locations)
     response = jsonify({
         'locations': locations
     })
@@ -38,6 +37,5 @@ def predict_home_price():
 
 
 if __name__ == '__main__':
-   
     app.run(debug=True)
     
