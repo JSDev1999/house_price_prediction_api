@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
-from util import load_saved_artifacts, get_location_names, get_estimated_price
+from api.util import load_saved_artifacts, get_location_names, get_estimated_price
 app = Flask(__name__)
 CORS(app)
  
